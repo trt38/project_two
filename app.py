@@ -11,7 +11,7 @@ from flask import Flask, jsonify
 #################################################
 # Database Setup
 #################################################
-rds_connection_string = "postgres:Nvrknwsbst7@localhost:5432/Project_2"
+rds_connection_string = "user:password@localhost:5432/Project_2"
 engine = create_engine(f'postgresql://{rds_connection_string}')
 
 # reflect an existing database into a new model

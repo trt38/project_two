@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OUD Admissions</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+    <h1>OUD Treatment Admissions by State</h1>
+    <hr>
+    <h2>Opioid Use Disorder</h2> 
+    <p>The DSM-5 defines Opioid Use Disorder (OUD) as "problematic pattern of opioid use leading to clinically significant impairment or distress". 
+        OUD is commonly referred to as "Opioid Abuse" or "Opioid Addiction". In the United States, approximmately 11.5 million people self-reported
+        that they had used prescribed opioids in a manner other than directed in 2016 (CDC.gov). Unfortunately, access to treatment for OUD does not 
+        meet the demand in many areas. This can contribute to self-medication, opioid-related complications, and opioid-related deaths. Below, you can 
+        view the number of admissions to OUD treatment programs as reported by SAMHSA.gov. 
+    </p>
+    Select Year: <select id="selDataset" onchange="getData(this.value)">
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+    </select>
+
+    <div id="bar"></div>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="data.js"></script>
+    <script src="plots.js"></script>
+</body>
+</html>
